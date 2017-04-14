@@ -5,33 +5,43 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
+import org.w3c.dom.Text;
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
-    //declaramos la variable imageView de tipo ImageView
-    Button button;
-    Toast toast;
+    //declaramos las variables
+
+    TextView tV;
+    ImageView iV;
+    Button bT, bI;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        /*//acceder a la imagen por medio del id
-        imageView=(ImageView)findViewById(R.id.imageView);
-        //si queremos modificar atributos ponemos
-        imageView.setColorFilter(454);
-*/
-        button=(Button)findViewById(R.id.boton);
-        button.setOnClickListener(this);
+
+    //vamos a enlazarlos con sus respectivos ids
+
+        tV=(TextView)findViewById(R.id.tV);
+        iV=(ImageView)findViewById(R.id.iV);
+        bT=(Button)findViewById(R.id.bT);
+        bI=(Button)findViewById(R.id.bI);
+
+    //Necesario para activar el action listener
+        bT.setOnClickListener(this);
+        bI.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()){
-            case R.id.boton:
-                Toast.makeText(getApplicationContext(), "Hola esto es un toast", Toast.LENGTH_SHORT).show();
+        switch(v.getId()){
+            case R.id.bT:
+                tV.setText("Chao Jaime");
                 break;
-            default:
-                Toast.makeText(getApplicationContext(),"Esto es por efecto", Toast.LENGTH_LONG).show();
+            case R.id.bI:
+                iV.setImageResource(R.drawable.icono_android);
                 break;
         }
     }
