@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">EjemploGit</string>
+    <string name="boton">New Boton</string>
 </resources>
