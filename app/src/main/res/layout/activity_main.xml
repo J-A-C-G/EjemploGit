@@ -4,44 +4,25 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content">
 
+    <Button
+        android:id="@+id/btn_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Call 2nd Activity"
+        android:layout_below="@+id/txtNombre"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp" />
 
-    <TextView
-        android:id="@+id/tV"
+    <EditText
+        android:id="@+id/txtNombre"
+        android:hint="Escribe tu nombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="11dp"
-        android:layout_marginTop="43dp"
-        android:text="Hola Jaime" />
+        android:layout_marginTop="17dp"
+        android:ems="10"/>
 
-    <Button
-        android:id="@+id/bT"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/iV"
-        android:layout_marginTop="85dp"
-        android:layout_toStartOf="@+id/iV"
-        android:text="Texto" />
-
-    <Button
-        android:id="@+id/bI"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/bT"
-        android:layout_marginTop="22dp"
-        android:text="Imagen" />
-
-    <ImageView
-        android:id="@+id/iV"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/ic_launcher"
-        android:layout_marginTop="55dp"
-        android:layout_below="@+id/tV"
-        android:layout_toEndOf="@+id/bI"
-        android:layout_marginStart="53dp" />
 </RelativeLayout>
 
 
