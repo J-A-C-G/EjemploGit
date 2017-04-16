@@ -28,9 +28,8 @@
         android:id="@+id/radioGroup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/btn_activity"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="41dp">
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
 
         <RadioButton
             android:id="@+id/opcion1"
@@ -60,6 +59,14 @@
             android:text="opcion3" />
 
     </RadioGroup>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="39dp"
+        android:layout_below="@+id/btn_activity"
+        android:layout_alignParentStart="true" />
 </RelativeLayout>
 
 
